@@ -4,9 +4,18 @@ import java.math.BigDecimal;
 
 public class TransferRequest {
 
+    private String transactionId;
     private String fromAccountNumber;
     private String toAccountNumber;
     private BigDecimal amount;
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
+    }
 
     public String getFromAccountNumber() {
         return fromAccountNumber;
